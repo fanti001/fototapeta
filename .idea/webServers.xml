@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="19400af5-1de7-4d34-a622-da5f8bc50bc7" name="next" url="http://fantomia.pl">
+        <fileTransfer rootFolder="/home/fanti/workspace/test-next" accessType="SFTP" host="178.18.241.236" port="43043" sshConfigId="94a8b39a-11e2-461e-a4fa-838cccaf1c28" sshConfig="fanti@178.18.241.236:43043 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
