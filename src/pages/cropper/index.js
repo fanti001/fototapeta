@@ -24,20 +24,6 @@ function Cropper(props) {     // cropper
 	};
 	useEffect(() => {
 		setImage('http://localhost:8000/images/1200/f-1.jpg');
-	// 	setLoading(true);
-	// 	axios({
-	// 		method: 'get',
-	// 		baseURL: 'https://localhost:8000',
-	// 		url: '/images/1200/f-14.jpg',
-	// 		responseType: 'json',
-	// 	})
-	// 		.then(({data})=> setImages(data) )
-	// 		.catch(function (error) {
-	// 			// handle error
-	// 			console.log(error);
-	// 		})
-	// 		.finally(function () {
-	// 		setLoading(false)});
 	}, []);
 	return (
 			<main className={`${styles.main} ${monserrat.className}`}>

@@ -1,0 +1,40 @@
+.inputWidth {
+    position: relative;
+    width: 10rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    font-size: xx-large;
+    text-align: right;
+    margin: 2rem 0 ;
+}
+.inputHeight {
+    position: relative;
+    width: 10rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    font-size: xx-large;
+    text-align: right;
+    margin: 2rem 0;
+}
+.inputSuffix {
+    font-size: xx-large;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+}
+.inputPrefix {
+    font-size: xx-large;
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+}
+.title {
+    font-size: xx-large;
+    padding: 1rem;
+}
