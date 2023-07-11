@@ -63,8 +63,8 @@ function Cropper({query}, props) {
 
 	const scale = image.orgWidth / image.thumbWidth;
 	//max print
-	const maxPrintWidth = parseInt(image.orgWidth / 12.50, 10);
-	const maxPrintHeight = parseInt(image.orgHeight / 12.50, 10);
+	const maxPrintWidth = parseInt(image.orgWidth, 10);
+	const maxPrintHeight = parseInt(image.orgHeight, 10);
 
 	const [crop, setCrop] = useState({
 		unit: 'px',
@@ -77,7 +77,7 @@ function Cropper({query}, props) {
 	const handleChange = (e) => {
 		setCrop({
 			...crop,
-			[e.target.id]: parseInt(e.target.value * 12.5 / scale, 10),
+			[e.target.id]: parseInt(e.target.value, 10),
 		})
 		return crop;
 	}
@@ -106,7 +106,7 @@ function Cropper({query}, props) {
 						id="width"
 						name="width"
 						onChange={handleChange}
-						value={parseInt(crop.width / 12.50 * scale, 10)}
+						value={crop.width}
 					/>
 					<span className={`${cropStyles.inputSuffix}`} >cm</span>
 				</label>
@@ -118,7 +118,7 @@ function Cropper({query}, props) {
 						id="height"
 						name="height"
 						onChange={handleChange}
-						value={parseInt(crop.height / 12.50 * scale, 10)}
+						value={crop.height}
 					/>
 					<span className={`${cropStyles.inputSuffix}`} >cm</span>
 				</label>

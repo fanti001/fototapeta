@@ -46,7 +46,7 @@ export default function GalleryItem({className}) {
 		<>
 			{images.map((image) => (
 					<Image
-						onClick={() => router.push(`/cropper2/${image.id}`)}
+						onClick={() => router.push(`/cropper/${image.id}`)}
 						data={"hello"}
 						key={image.id}
 						src={`http://localhost:8000/${image.miniSrc}`}
